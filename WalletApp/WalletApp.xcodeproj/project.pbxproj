@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB78B0711D64055F00737B31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0701D64055F00737B31 /* HomeVC.swift */; };
+		BB78B0731D64056C00737B31 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0721D64056C00737B31 /* HistoryVC.swift */; };
+		BB78B0751D64058100737B31 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0741D64058100737B31 /* HomeVC.xib */; };
 		E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA21D64047400EA4A7D /* AppDelegate.swift */; };
 		E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA41D64047400EA4A7D /* ViewController.swift */; };
 		E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CA61D64047400EA4A7D /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB78B0701D64055F00737B31 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BB78B0721D64056C00737B31 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		BB78B0741D64058100737B31 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		E1121C9F1D64047400EA4A7D /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121CA21D64047400EA4A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1121CA41D64047400EA4A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				E1121CA21D64047400EA4A7D /* AppDelegate.swift */,
+				BB78B0701D64055F00737B31 /* HomeVC.swift */,
+				BB78B0741D64058100737B31 /* HomeVC.xib */,
+				BB78B0721D64056C00737B31 /* HistoryVC.swift */,
 				E1121CA41D64047400EA4A7D /* ViewController.swift */,
 				E1121CA61D64047400EA4A7D /* Main.storyboard */,
 				E1121CAC1D64047400EA4A7D /* Assets.xcassets */,
@@ -126,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */,
+				BB78B0751D64058100737B31 /* HomeVC.xib in Resources */,
 				E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */,
 				E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */,
 			);
@@ -139,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */,
+				BB78B0731D64056C00737B31 /* HistoryVC.swift in Sources */,
+				BB78B0711D64055F00737B31 /* HomeVC.swift in Sources */,
 				E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */,
 				E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */,
 			);
@@ -292,6 +304,7 @@
 				E1121CB61D64047400EA4A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
