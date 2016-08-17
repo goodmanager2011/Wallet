@@ -10,6 +10,9 @@
 		BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0761D6409B900737B31 /* HistoryVC.swift */; };
 		BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0771D6409B900737B31 /* HomeVC.swift */; };
 		BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0781D6409B900737B31 /* HomeVC.xib */; };
+		BB78B07D1D640B5100737B31 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B07C1D640B5100737B31 /* HistoryVC.xib */; };
+		BB78B07F1D640C1100737B31 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B07E1D640C1100737B31 /* HistoryCell.swift */; };
+		BB78B0811D640C2400737B31 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0801D640C2400737B31 /* HistoryCell.xib */; };
 		E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA21D64047400EA4A7D /* AppDelegate.swift */; };
 		E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA41D64047400EA4A7D /* ViewController.swift */; };
 		E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CA61D64047400EA4A7D /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 		BB78B0761D6409B900737B31 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		BB78B0771D6409B900737B31 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BB78B0781D6409B900737B31 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BB78B07C1D640B5100737B31 /* HistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
+		BB78B07E1D640C1100737B31 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		BB78B0801D640C2400737B31 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 		E1121C9F1D64047400EA4A7D /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121CA21D64047400EA4A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1121CA41D64047400EA4A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB78B0821D640FDA00737B31 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				BB78B0761D6409B900737B31 /* HistoryVC.swift */,
+				BB78B07C1D640B5100737B31 /* HistoryVC.xib */,
+				BB78B07E1D640C1100737B31 /* HistoryCell.swift */,
+				BB78B0801D640C2400737B31 /* HistoryCell.xib */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
 		E1121C961D64047400EA4A7D = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +91,7 @@
 				E1121CB71D64052700EA4A7D /* Config.swift */,
 				E1121CA21D64047400EA4A7D /* AppDelegate.swift */,
 				E1121CA41D64047400EA4A7D /* ViewController.swift */,
-				BB78B0761D6409B900737B31 /* HistoryVC.swift */,
+				BB78B0821D640FDA00737B31 /* History */,
 				BB78B0771D6409B900737B31 /* HomeVC.swift */,
 				BB78B0781D6409B900737B31 /* HomeVC.xib */,
 				E1121CA61D64047400EA4A7D /* Main.storyboard */,
@@ -155,8 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */,
+				BB78B0811D640C2400737B31 /* HistoryCell.xib in Resources */,
 				E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */,
 				BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */,
+				BB78B07D1D640B5100737B31 /* HistoryVC.xib in Resources */,
 				E1121CBF1D6408C600EA4A7D /* Podfile in Resources */,
 				E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */,
 			);
@@ -172,6 +191,7 @@
 				BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */,
 				BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */,
 				E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */,
+				BB78B07F1D640C1100737B31 /* HistoryCell.swift in Sources */,
 				E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */,
 				E1121CB81D64052700EA4A7D /* Config.swift in Sources */,
 				E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */,
