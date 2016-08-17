@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class HomeVC: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+class HomeVC: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,CalculatorDelegate {
    /*
      //MARK:- OUTLET
     //MARK:- VAR
@@ -37,6 +37,14 @@ class HomeVC: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        let frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 250)
+        let keyboard = CalculatorKeyboard(frame: frame)
+        keyboard.delegate = self
+        keyboard.showDecimal = true
+        tfValues.inputView = keyboard
+
+        
         getListData()
         hideStackView()
         lbCurrency.text = pickerData[0]
@@ -136,5 +144,10 @@ class HomeVC: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         myPicker.hidden = true;
         lbCurrency.text = pickerData[row]
+    }
+    
+    // MARK: - RFCalculatorKeyboard delegate
+    func calculator(calculator: CalculatorKeyboard, didChangeValue value: String) {
+        tfValues.text = value
     }
 }

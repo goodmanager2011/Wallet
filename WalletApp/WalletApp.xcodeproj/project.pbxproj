@@ -16,7 +16,7 @@
 		BB78B0881D6416E100737B31 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0851D6416E100737B31 /* HistoryVC.xib */; };
 		BB78B08D1D641B0400737B31 /* add_default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB78B08B1D641B0400737B31 /* add_default.png */; };
 		BB78B08E1D641B0400737B31 /* add_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BB78B08C1D641B0400737B31 /* add_selected.png */; };
-		BB78B0951D6464E900737B31 /* PLCurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0941D6464E900737B31 /* PLCurrencyTextField.swift */; };
+		BB78B0971D646A2F00737B31 /* PLCurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0961D646A2F00737B31 /* PLCurrencyTextField.swift */; };
 		E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA21D64047400EA4A7D /* AppDelegate.swift */; };
 		E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA41D64047400EA4A7D /* ViewController.swift */; };
 		E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CA61D64047400EA4A7D /* Main.storyboard */; };
@@ -28,6 +28,11 @@
 		E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */; };
 		E1121CC31D640C3200EA4A7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1121CC21D640C3200EA4A7D /* Podfile */; };
 		E1121CDA1D641E0C00EA4A7D /* ActionOBJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */; };
+		E1121CE41D6425F300EA4A7D /* NumPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CE31D6425F300EA4A7D /* NumPad.swift */; };
+		E1121CEA1D64494A00EA4A7D /* CalculatorKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1121CE61D64494A00EA4A7D /* CalculatorKeyboard.xib */; };
+		E1121CEB1D64494A00EA4A7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1121CE71D64494A00EA4A7D /* Images.xcassets */; };
+		E1121CEC1D64494A00EA4A7D /* CalculatorKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CE81D64494A00EA4A7D /* CalculatorKeyboard.swift */; };
+		E1121CED1D64494A00EA4A7D /* CalculatorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CE91D64494A00EA4A7D /* CalculatorProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +45,7 @@
 		BB78B0851D6416E100737B31 /* HistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
 		BB78B08B1D641B0400737B31 /* add_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_default.png; sourceTree = "<group>"; };
 		BB78B08C1D641B0400737B31 /* add_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_selected.png; sourceTree = "<group>"; };
-		BB78B0941D6464E900737B31 /* PLCurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLCurrencyTextField.swift; sourceTree = "<group>"; };
+		BB78B0961D646A2F00737B31 /* PLCurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLCurrencyTextField.swift; sourceTree = "<group>"; };
 		D7A8A2239B7B9860F7EABCEE /* libPods-WalletApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WalletApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121C9F1D64047400EA4A7D /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121CA21D64047400EA4A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,11 @@
 		E1121CC21D640C3200EA4A7D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionOBJ.swift; sourceTree = "<group>"; };
 		E1121CDC1D641E4D00EA4A7D /* WalletApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WalletApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		E1121CE31D6425F300EA4A7D /* NumPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumPad.swift; sourceTree = "<group>"; };
+		E1121CE61D64494A00EA4A7D /* CalculatorKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorKeyboard.xib; sourceTree = "<group>"; };
+		E1121CE71D64494A00EA4A7D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1121CE81D64494A00EA4A7D /* CalculatorKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboard.swift; sourceTree = "<group>"; };
+		E1121CE91D64494A00EA4A7D /* CalculatorProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorProcessor.swift; sourceTree = "<group>"; };
 		E28B8A92473B9431E63423E0 /* Pods-WalletApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +162,12 @@
 		E1121CBD1D64077800EA4A7D /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				BB78B0941D6464E900737B31 /* PLCurrencyTextField.swift */,
+				BB78B0961D646A2F00737B31 /* PLCurrencyTextField.swift */,
+				E1121CE61D64494A00EA4A7D /* CalculatorKeyboard.xib */,
+				E1121CE71D64494A00EA4A7D /* Images.xcassets */,
+				E1121CE81D64494A00EA4A7D /* CalculatorKeyboard.swift */,
+				E1121CE91D64494A00EA4A7D /* CalculatorProcessor.swift */,
+				E1121CE31D6425F300EA4A7D /* NumPad.swift */,
 				E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */,
 				E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */,
 			);
@@ -224,10 +239,12 @@
 				E1121CC31D640C3200EA4A7D /* Podfile in Resources */,
 				E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */,
 				E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */,
+				E1121CEB1D64494A00EA4A7D /* Images.xcassets in Resources */,
 				BB78B0881D6416E100737B31 /* HistoryVC.xib in Resources */,
 				BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */,
 				BB78B0871D6416E100737B31 /* HistoryCell.xib in Resources */,
 				E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */,
+				E1121CEA1D64494A00EA4A7D /* CalculatorKeyboard.xib in Resources */,
 				BB78B08D1D641B0400737B31 /* add_default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,15 +305,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */,
+				E1121CE41D6425F300EA4A7D /* NumPad.swift in Sources */,
 				BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */,
 				E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */,
+				E1121CED1D64494A00EA4A7D /* CalculatorProcessor.swift in Sources */,
 				BB78B0861D6416E100737B31 /* HistoryCell.swift in Sources */,
 				E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */,
-				BB78B0951D6464E900737B31 /* PLCurrencyTextField.swift in Sources */,
 				E1121CDA1D641E0C00EA4A7D /* ActionOBJ.swift in Sources */,
 				E1121CB81D64052700EA4A7D /* Config.swift in Sources */,
 				E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */,
+				BB78B0971D646A2F00737B31 /* PLCurrencyTextField.swift in Sources */,
 				E1121CBB1D64073A00EA4A7D /* SWXMLHash.swift in Sources */,
+				E1121CEC1D64494A00EA4A7D /* CalculatorKeyboard.swift in Sources */,
 				E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
