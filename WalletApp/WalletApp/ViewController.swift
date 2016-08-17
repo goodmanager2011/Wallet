@@ -11,11 +11,27 @@ import UIKit
 class ViewController: UIViewController {
 
     var items = [[String: String]]()
+    
+    var objs: [ActionOBJ]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        fnRefresh()
+//        fnRefresh()
+        
+        var firstObj = ActionOBJ.createEntity() as! ActionOBJ
+        firstObj.currency = "USD"
+        firstObj.value = "-1000"
+        
+        NSManagedObjectContext.defaultContext().saveToPersistentStoreAndWait()
+
+        
+        objs = ActionOBJ.findAll() as! [ActionOBJ]
+        let currentBeer = objs[0]
+
+        print(currentBeer.currency)
+        
+
     }
 
     override func didReceiveMemoryWarning() {
