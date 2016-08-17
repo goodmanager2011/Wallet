@@ -22,4 +22,12 @@ class HomeVC: UIViewController {
         let vc:HistoryVC = HistoryVC(nibName:"HistoryVC", bundle: nil);
         self.navigationController!.pushViewController(vc, animated: true);
     }
+    @IBAction func positiveAction(sender: UIButton)
+    {
+        sender.selected = !sender.selected;
+    }
+    @IBAction func negativeAction(sender: UIButton)
+    {
+        sender.selected = !sender.selected;
+    }
 }
