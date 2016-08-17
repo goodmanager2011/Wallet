@@ -9,5 +9,17 @@
 import Foundation
 import UIKit
 class HomeVC: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad();
+        self.navigationController!.navigationBarHidden = true;
+
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated);
+    }
+    @IBAction func historyAction(sender: UIButton)
+    {
+        let vc:HistoryVC = HistoryVC(nibName:"HistoryVC", bundle: nil);
+        self.navigationController!.pushViewController(vc, animated: true);
+    }
 }

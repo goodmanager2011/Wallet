@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Db0-Cf-tiz" customClass="HistoryCell" customModule="WalletApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Db0-Cf-tiz" id="gtv-4h-GOS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wn-8i-TTW">
+                        <rect key="frame" x="220" y="0.0" width="46" height="43"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="ESJ-If-Sy1"/>
+                        </constraints>
+                        <state key="normal" title="Edit"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ4-Ci-D2S">
+                        <rect key="frame" x="274" y="0.0" width="46" height="43"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="7Gc-7d-Z6X"/>
+                        </constraints>
+                        <state key="normal" title="Del"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.000 vnd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xq-Im-yzC">
+                        <rect key="frame" x="0.0" y="7" width="212" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FZ4-Ci-D2S" secondAttribute="bottom" id="84I-O3-tRB"/>
+                    <constraint firstItem="FZ4-Ci-D2S" firstAttribute="leading" secondItem="6wn-8i-TTW" secondAttribute="trailing" constant="8" id="DLv-s2-cFN"/>
+                    <constraint firstAttribute="trailing" secondItem="FZ4-Ci-D2S" secondAttribute="trailing" id="V9H-qd-Yvf"/>
+                    <constraint firstItem="6wn-8i-TTW" firstAttribute="leading" secondItem="4Xq-Im-yzC" secondAttribute="trailing" constant="8" id="VOQ-aj-3UK"/>
+                    <constraint firstItem="6wn-8i-TTW" firstAttribute="top" secondItem="gtv-4h-GOS" secondAttribute="top" id="WTg-XW-J6w"/>
+                    <constraint firstAttribute="bottom" secondItem="6wn-8i-TTW" secondAttribute="bottom" id="aav-aC-uWM"/>
+                    <constraint firstItem="4Xq-Im-yzC" firstAttribute="centerY" secondItem="gtv-4h-GOS" secondAttribute="centerY" id="hyi-AR-hPt"/>
+                    <constraint firstItem="4Xq-Im-yzC" firstAttribute="leading" secondItem="gtv-4h-GOS" secondAttribute="leading" id="lHL-0v-Hi4"/>
+                    <constraint firstItem="FZ4-Ci-D2S" firstAttribute="top" secondItem="gtv-4h-GOS" secondAttribute="top" id="wfu-rM-u3w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="deleteButton" destination="FZ4-Ci-D2S" id="MkF-cl-PWd"/>
+                <outlet property="editButton" destination="6wn-8i-TTW" id="1hS-dE-Ehb"/>
+                <outlet property="priceButton" destination="4Xq-Im-yzC" id="o12-IY-jAZ"/>
+            </connections>
+            <point key="canvasLocation" x="256" y="267"/>
+        </tableViewCell>
+    </objects>
+</document>

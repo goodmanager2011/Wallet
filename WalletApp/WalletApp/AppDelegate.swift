@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         MagicalRecord.setupCoreDataStackWithStoreNamed("WalletApp")
+        // Override point for customization after application launch.
+        window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.whiteColor()
+        
+        //show Login
+        let kclass:String = String(HomeVC)
+        let vc:HomeVC = HomeVC(nibName:kclass, bundle: nil)
+        let navigationController: UINavigationController = UINavigationController(rootViewController: vc);
+        window?.rootViewController = navigationController;
+        window?.makeKeyAndVisible()
         
         return true
     }

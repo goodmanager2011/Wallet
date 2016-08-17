@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0682A7117EC831E2B4C44729 /* libPods-WalletApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8EF84E0D2C1D8280964C1 /* libPods-WalletApp.a */; };
+		18E43B1E4420055F940B1B60 /* Pods_WalletApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01647B206929A6943274DB45 /* Pods_WalletApp.framework */; };
 		BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0761D6409B900737B31 /* HistoryVC.swift */; };
 		BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0771D6409B900737B31 /* HomeVC.swift */; };
 		BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0781D6409B900737B31 /* HomeVC.xib */; };
+		BB78B0861D6416E100737B31 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0831D6416E100737B31 /* HistoryCell.swift */; };
+		BB78B0871D6416E100737B31 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0841D6416E100737B31 /* HistoryCell.xib */; };
+		BB78B0881D6416E100737B31 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0851D6416E100737B31 /* HistoryVC.xib */; };
 		E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA21D64047400EA4A7D /* AppDelegate.swift */; };
 		E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA41D64047400EA4A7D /* ViewController.swift */; };
 		E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CA61D64047400EA4A7D /* Main.storyboard */; };
@@ -21,14 +24,18 @@
 		E1121CBB1D64073A00EA4A7D /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */; };
 		E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */; };
 		E1121CC31D640C3200EA4A7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1121CC21D640C3200EA4A7D /* Podfile */; };
-		E1121CD81D641B8700EA4A7D /* ActionOBJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CD71D641B8700EA4A7D /* ActionOBJ.swift */; };
+		E1121CDA1D641E0C00EA4A7D /* ActionOBJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01647B206929A6943274DB45 /* Pods_WalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A4FB9EA8770986D643CDD /* Pods-WalletApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BB78B0761D6409B900737B31 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		BB78B0771D6409B900737B31 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BB78B0781D6409B900737B31 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BB78B0831D6416E100737B31 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		BB78B0841D6416E100737B31 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		BB78B0851D6416E100737B31 /* HistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
 		E1121C9F1D64047400EA4A7D /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121CA21D64047400EA4A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1121CA41D64047400EA4A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,10 +48,9 @@
 		E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
 		E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
 		E1121CC21D640C3200EA4A7D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
-		E1121CCB1D6414EF00EA4A7D /* WalletApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WalletApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		E1121CD71D641B8700EA4A7D /* ActionOBJ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionOBJ.swift; sourceTree = "<group>"; };
+		E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionOBJ.swift; sourceTree = "<group>"; };
+		E1121CDC1D641E4D00EA4A7D /* WalletApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WalletApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		E28B8A92473B9431E63423E0 /* Pods-WalletApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.release.xcconfig"; sourceTree = "<group>"; };
-		E5D8EF84E0D2C1D8280964C1 /* libPods-WalletApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WalletApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0682A7117EC831E2B4C44729 /* libPods-WalletApp.a in Frameworks */,
+				18E43B1E4420055F940B1B60 /* Pods_WalletApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +68,7 @@
 		27D3B9422074C6EE95983428 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5D8EF84E0D2C1D8280964C1 /* libPods-WalletApp.a */,
+				01647B206929A6943274DB45 /* Pods_WalletApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,6 +82,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BB78B0891D6416F300737B31 /* HistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				BB78B0761D6409B900737B31 /* HistoryVC.swift */,
+				BB78B0851D6416E100737B31 /* HistoryVC.xib */,
+				BB78B0831D6416E100737B31 /* HistoryCell.swift */,
+				BB78B0841D6416E100737B31 /* HistoryCell.xib */,
+			);
+			name = HistoryVC;
+			sourceTree = "<group>";
+		};
+		BB78B08A1D6416FE00737B31 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				BB78B0771D6409B900737B31 /* HomeVC.swift */,
+				BB78B0781D6409B900737B31 /* HomeVC.xib */,
+			);
+			name = HomeVC;
+			sourceTree = "<group>";
+		};
 		E1121C961D64047400EA4A7D = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +109,6 @@
 				E1121CA01D64047400EA4A7D /* Products */,
 				30EC4AE1DCB65539ECC28FC9 /* Pods */,
 				27D3B9422074C6EE95983428 /* Frameworks */,
-				E1121CCB1D6414EF00EA4A7D /* WalletApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,14 +127,14 @@
 				E1121CB71D64052700EA4A7D /* Config.swift */,
 				E1121CA21D64047400EA4A7D /* AppDelegate.swift */,
 				E1121CA41D64047400EA4A7D /* ViewController.swift */,
-				BB78B0761D6409B900737B31 /* HistoryVC.swift */,
-				BB78B0771D6409B900737B31 /* HomeVC.swift */,
-				BB78B0781D6409B900737B31 /* HomeVC.xib */,
+				E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */,
 				E1121CA61D64047400EA4A7D /* Main.storyboard */,
+				E1121CDC1D641E4D00EA4A7D /* WalletApp-Bridging-Header.h */,
+				BB78B0891D6416F300737B31 /* HistoryVC */,
+				BB78B08A1D6416FE00737B31 /* HomeVC */,
 				E1121CAC1D64047400EA4A7D /* Assets.xcassets */,
 				E1121CAE1D64047400EA4A7D /* LaunchScreen.storyboard */,
 				E1121CB11D64047400EA4A7D /* Info.plist */,
-				E1121CD71D641B8700EA4A7D /* ActionOBJ.swift */,
 				E1121CA91D64047400EA4A7D /* WalletApp.xcdatamodeld */,
 				E1121CC21D640C3200EA4A7D /* Podfile */,
 			);
@@ -189,7 +214,9 @@
 				E1121CC31D640C3200EA4A7D /* Podfile in Resources */,
 				E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */,
 				E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */,
+				BB78B0881D6416E100737B31 /* HistoryVC.xib in Resources */,
 				BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */,
+				BB78B0871D6416E100737B31 /* HistoryCell.xib in Resources */,
 				E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,8 +279,9 @@
 				BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */,
 				BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */,
 				E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */,
-				E1121CD81D641B8700EA4A7D /* ActionOBJ.swift in Sources */,
+				BB78B0861D6416E100737B31 /* HistoryCell.swift in Sources */,
 				E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */,
+				E1121CDA1D641E0C00EA4A7D /* ActionOBJ.swift in Sources */,
 				E1121CB81D64052700EA4A7D /* Config.swift in Sources */,
 				E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */,
 				E1121CBB1D64073A00EA4A7D /* SWXMLHash.swift in Sources */,
@@ -380,7 +408,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WalletApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "“${PODS_ROOT}/”";
 			};
 			name = Debug;
 		};
@@ -395,7 +422,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = phs.WalletApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WalletApp-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "“${PODS_ROOT}/”";
 			};
 			name = Release;
 		};
