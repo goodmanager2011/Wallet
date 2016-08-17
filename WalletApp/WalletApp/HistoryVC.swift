@@ -14,7 +14,8 @@ class HistoryVC: UIViewController {
     
     //MARK:- OUTLET
     @IBOutlet var tableControl: UITableView!;
-    
+    @IBOutlet var tfTotal: UILabel!;
+
     //MARK:- VAR
     var objs: [ActionOBJ]!
     //MARK:- INIT
@@ -32,6 +33,23 @@ class HistoryVC: UIViewController {
     //MARK:- DATA
     func getListData() {
         objs = ActionOBJ.findAll() as! [ActionOBJ]
+        totalData()
+        
+    }
+    func totalData()
+    {
+        var value: Double = 0;
+        for item in objs {
+            value = value + (item.value as NSString).doubleValue
+        }
+        tfTotal.text = String(format: "%.2f %@", value, "$")
+        if value >= 0 {
+            tfTotal.textColor = UIColor.whiteColor();
+        }
+        else
+        {
+            tfTotal.textColor = UIColor.redColor();
+        }
     }
     //MARK:- ACTION
     @IBAction func homeAction(sender: UIButton)

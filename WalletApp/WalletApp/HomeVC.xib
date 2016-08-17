@@ -7,8 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="WalletApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnDone" destination="r7I-R6-KdC" id="JKJ-oW-Ztk"/>
                 <outlet property="btnNegative" destination="tbp-Cw-4EH" id="bvY-jL-ONY"/>
                 <outlet property="btnPositive" destination="O6z-rE-aTM" id="5Bt-kt-3fw"/>
+                <outlet property="svInput" destination="jLD-OY-Jdc" id="mIW-u4-03f"/>
+                <outlet property="tfTotal" destination="rtf-Mv-H7d" id="SBE-Qp-IBk"/>
                 <outlet property="tfValues" destination="4L8-Qm-EKQ" id="8bZ-dP-XXM"/>
                 <outlet property="view" destination="8cW-ZS-eeC" id="4x0-Z8-k2m"/>
             </connections>
@@ -32,7 +35,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6z-rE-aTM">
-                    <rect key="frame" x="156" y="229" width="50" height="50"/>
+                    <rect key="frame" x="50" y="229" width="50" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="AIK-lD-af0"/>
@@ -45,7 +48,7 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jLD-OY-Jdc">
-                    <rect key="frame" x="156" y="312" width="289" height="36"/>
+                    <rect key="frame" x="50" y="312" width="500" height="36"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSP-oy-spx">
                             <rect key="frame" x="0.0" y="0.0" width="19" height="36"/>
@@ -54,10 +57,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4L8-Qm-EKQ">
-                            <rect key="frame" x="29" y="0.0" width="260" height="36"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="260" id="5Bk-8c-pVc"/>
-                            </constraints>
+                            <rect key="frame" x="29" y="0.0" width="471" height="36"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
@@ -88,7 +88,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbp-Cw-4EH">
-                    <rect key="frame" x="395" y="229" width="50" height="50"/>
+                    <rect key="frame" x="500" y="229" width="50" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="69g-Wg-kC5"/>
@@ -109,8 +109,9 @@
                 <constraint firstItem="jLD-OY-Jdc" firstAttribute="top" secondItem="O6z-rE-aTM" secondAttribute="bottom" constant="33" id="GAm-Cx-HTy"/>
                 <constraint firstAttribute="bottom" secondItem="0qy-4I-PJu" secondAttribute="bottom" constant="24" id="IQl-cH-62L"/>
                 <constraint firstItem="jLD-OY-Jdc" firstAttribute="centerY" secondItem="8cW-ZS-eeC" secondAttribute="centerY" constant="30" id="JNB-g3-iyb"/>
+                <constraint firstAttribute="trailing" secondItem="jLD-OY-Jdc" secondAttribute="trailing" constant="50" id="RZi-x1-u1B"/>
+                <constraint firstItem="jLD-OY-Jdc" firstAttribute="leading" secondItem="8cW-ZS-eeC" secondAttribute="leading" constant="50" id="XqT-Q7-lRu"/>
                 <constraint firstItem="r7I-R6-KdC" firstAttribute="centerX" secondItem="jLD-OY-Jdc" secondAttribute="centerX" id="bZA-jW-apf"/>
-                <constraint firstItem="jLD-OY-Jdc" firstAttribute="centerX" secondItem="8cW-ZS-eeC" secondAttribute="centerX" id="bbh-8X-xwN"/>
                 <constraint firstItem="rtf-Mv-H7d" firstAttribute="centerX" secondItem="8cW-ZS-eeC" secondAttribute="centerX" id="hzR-Zs-d0o"/>
                 <constraint firstItem="tbp-Cw-4EH" firstAttribute="trailing" secondItem="jLD-OY-Jdc" secondAttribute="trailing" id="oXk-zc-twg"/>
                 <constraint firstItem="rtf-Mv-H7d" firstAttribute="top" secondItem="8cW-ZS-eeC" secondAttribute="top" constant="10" id="pNf-br-Q0m"/>
