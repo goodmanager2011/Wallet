@@ -11,21 +11,61 @@ import UIKit
 let cellID: String = "historyCellID";
 
 class HistoryVC: UIViewController {
+    
+    //MARK:- OUTLET
     @IBOutlet var tableControl: UITableView!;
+    @IBOutlet var tfTotal: UILabel!;
 
+    //MARK:- VAR
+    var objs: [ActionOBJ]!
+    //MARK:- INIT
     override func viewDidLoad() {
         super.viewDidLoad();
         self.navigationController!.navigationBarHidden = true;
         //init tableviewcell
         tableControl.registerNib(UINib.init(nibName: String(HistoryCell), bundle: nil), forCellReuseIdentifier: cellID);
-
+        //
+        getListData()
     }
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated);
     }
+    //MARK:- DATA
+    func getListData() {
+        objs = ActionOBJ.findAll() as! [ActionOBJ]
+        totalData()
+        
+    }
+    func totalData()
+    {
+        var value: Double = 0;
+        for item in objs {
+            value = value + (item.value as NSString).doubleValue
+        }
+        tfTotal.text = String(format: "%.2f %@", value, "$")
+        if value >= 0 {
+            tfTotal.textColor = UIColor.whiteColor();
+        }
+        else
+        {
+            tfTotal.textColor = UIColor.redColor();
+        }
+    }
+    //MARK:- ACTION
     @IBAction func homeAction(sender: UIButton)
     {
         self.navigationController!.popViewControllerAnimated(true);
+    }
+    func deleteAction(sender: UIButton) -> Void {
+        let index = sender.tag - 100
+        let currentBeer = objs[index]
+        currentBeer.deleteEntity();
+        NSManagedObjectContext.defaultContext().saveToPersistentStoreAndWait()
+        getListData()
+        self.tableControl.reloadData();
+    }
+    func editAction(sender: UIButton) -> Void {
+//        let index = sender.tag - 200
     }
     //MARK:- TABLEVIEW
     
@@ -34,22 +74,15 @@ class HistoryVC: UIViewController {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
+        return objs.count;
     }
-//    
-//    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return UITableViewAutomaticDimension;
-//    }
-//    
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 44;
-//        return UITableViewAutomaticDimension;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell: HistoryCell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! HistoryCell;
-        
         
         configureCell(cell, forRowAtIndexPath: indexPath)
         return cell;
@@ -61,6 +94,9 @@ class HistoryVC: UIViewController {
     
     func configureCell(cellTmp: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         let cell: HistoryCell = cellTmp as! HistoryCell;
+        let currentBeer = objs[indexPath.row]
+        cell.priceButton.text = String(format: "%@ %@", currentBeer.value, currentBeer.currency);
+        
         cell.deleteButton.tag = indexPath.row + 100;
         cell.deleteButton.addTarget(self, action: #selector(deleteAction), forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -68,11 +104,6 @@ class HistoryVC: UIViewController {
         cell.editButton.addTarget(self, action: #selector(editAction), forControlEvents: UIControlEvents.TouchUpInside)
 
     }
-    func deleteAction(sender: UIButton) -> Void {
-        let index = sender.tag - 100
-    }
-    func editAction(sender: UIButton) -> Void {
-        let index = sender.tag - 200
-    }
+
 
 }

@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryVC" customModule="WalletApp" customModuleProvider="target">
             <connections>
                 <outlet property="tableControl" destination="4Rc-DK-U5N" id="UDV-zl-aHB"/>
+                <outlet property="tfTotal" destination="gDa-gn-Y2a" id="DJa-Mm-rFY"/>
                 <outlet property="view" destination="xfp-LG-WQp" id="bbb-Km-ndw"/>
             </connections>
         </placeholder>
@@ -30,7 +31,7 @@
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Rc-DK-U5N">
-                    <rect key="frame" x="35" y="80" width="528" height="445"/>
+                    <rect key="frame" x="24" y="80" width="552" height="445"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="y3u-cu-6d8"/>
@@ -53,11 +54,11 @@
                 <constraint firstAttribute="trailing" secondItem="yC4-68-gG1" secondAttribute="trailing" constant="24" id="3Ay-Bz-hPH"/>
                 <constraint firstItem="yC4-68-gG1" firstAttribute="leading" secondItem="xfp-LG-WQp" secondAttribute="leading" constant="24" id="QvT-P5-q5r"/>
                 <constraint firstItem="aR0-F0-7qs" firstAttribute="leading" secondItem="xfp-LG-WQp" secondAttribute="leading" constant="24" id="Xu7-cJ-g8i"/>
-                <constraint firstItem="4Rc-DK-U5N" firstAttribute="leading" secondItem="xfp-LG-WQp" secondAttribute="leading" constant="35" id="aC4-Nv-mN0"/>
+                <constraint firstItem="4Rc-DK-U5N" firstAttribute="leading" secondItem="xfp-LG-WQp" secondAttribute="leading" constant="24" id="aC4-Nv-mN0"/>
                 <constraint firstAttribute="bottom" secondItem="aR0-F0-7qs" secondAttribute="bottom" constant="24" id="c04-iB-trP"/>
                 <constraint firstItem="gDa-gn-Y2a" firstAttribute="centerX" secondItem="xfp-LG-WQp" secondAttribute="centerX" id="hTJ-SM-fUH"/>
                 <constraint firstItem="gDa-gn-Y2a" firstAttribute="top" secondItem="xfp-LG-WQp" secondAttribute="top" constant="10" id="msD-QB-XdO"/>
-                <constraint firstAttribute="trailing" secondItem="4Rc-DK-U5N" secondAttribute="trailing" constant="37" id="s66-sd-tpY"/>
+                <constraint firstAttribute="trailing" secondItem="4Rc-DK-U5N" secondAttribute="trailing" constant="24" id="s66-sd-tpY"/>
                 <constraint firstItem="yC4-68-gG1" firstAttribute="top" secondItem="gDa-gn-Y2a" secondAttribute="bottom" constant="5" id="uIA-wh-q5P"/>
                 <constraint firstItem="4Rc-DK-U5N" firstAttribute="top" secondItem="yC4-68-gG1" secondAttribute="bottom" constant="16" id="yKl-Ta-RYf"/>
                 <constraint firstItem="aR0-F0-7qs" firstAttribute="top" secondItem="4Rc-DK-U5N" secondAttribute="bottom" constant="21" id="yqm-If-iEi"/>
