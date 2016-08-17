@@ -16,6 +16,7 @@
 		BB78B0881D6416E100737B31 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0851D6416E100737B31 /* HistoryVC.xib */; };
 		BB78B08D1D641B0400737B31 /* add_default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB78B08B1D641B0400737B31 /* add_default.png */; };
 		BB78B08E1D641B0400737B31 /* add_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BB78B08C1D641B0400737B31 /* add_selected.png */; };
+		BB78B0951D6464E900737B31 /* PLCurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0941D6464E900737B31 /* PLCurrencyTextField.swift */; };
 		E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA21D64047400EA4A7D /* AppDelegate.swift */; };
 		E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA41D64047400EA4A7D /* ViewController.swift */; };
 		E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CA61D64047400EA4A7D /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		BB78B0851D6416E100737B31 /* HistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
 		BB78B08B1D641B0400737B31 /* add_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_default.png; sourceTree = "<group>"; };
 		BB78B08C1D641B0400737B31 /* add_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_selected.png; sourceTree = "<group>"; };
+		BB78B0941D6464E900737B31 /* PLCurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLCurrencyTextField.swift; sourceTree = "<group>"; };
 		D7A8A2239B7B9860F7EABCEE /* libPods-WalletApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WalletApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121C9F1D64047400EA4A7D /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121CA21D64047400EA4A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		E1121CBD1D64077800EA4A7D /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				BB78B0941D6464E900737B31 /* PLCurrencyTextField.swift */,
 				E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */,
 				E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */,
 			);
@@ -289,6 +292,7 @@
 				E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */,
 				BB78B0861D6416E100737B31 /* HistoryCell.swift in Sources */,
 				E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */,
+				BB78B0951D6464E900737B31 /* PLCurrencyTextField.swift in Sources */,
 				E1121CDA1D641E0C00EA4A7D /* ActionOBJ.swift in Sources */,
 				E1121CB81D64052700EA4A7D /* Config.swift in Sources */,
 				E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */,
