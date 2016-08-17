@@ -8,16 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CalculatorDelegate {
 
     var items = [[String: String]]()
     
+    @IBOutlet weak var txt: UITextField!
     var objs: [ActionOBJ]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        fnRefresh()
+        fnRefresh()
+        
+        
+        let frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 300)
+        let keyboard = CalculatorKeyboard(frame: frame)
+        keyboard.delegate = self
+        keyboard.showDecimal = true
+        txt.inputView = keyboard
+
+        
         
         var firstObj = ActionOBJ.createEntity() as! ActionOBJ
         firstObj.currency = "USD"
@@ -33,7 +43,12 @@ class ViewController: UIViewController {
         
 
     }
-
+    
+    // MARK: - RFCalculatorKeyboard delegate
+    func calculator(calculator: CalculatorKeyboard, didChangeValue value: String) {
+        txt.text = value
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -66,7 +81,7 @@ class ViewController: UIViewController {
                     
                     self.items.append(dic as! [String : String])
                     
-                    print("\(value.element?.attributes["CurrencyCode"] )")
+                    print("\(value.element?.attributes["Transfer"] )")
                     
                 }
                 dispatch_async(dispatch_get_main_queue(),{
