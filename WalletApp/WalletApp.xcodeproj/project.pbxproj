@@ -1,1095 +1,473 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0A8A4F39E005F76D45582CE0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>27D3B9422074C6EE95983428</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D7A8A2239B7B9860F7EABCEE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2DB7289CBA5EA5CEF7FD7480</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>30EC4AE1DCB65539ECC28FC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AE9A4FB9EA8770986D643CDD</string>
-				<string>E28B8A92473B9431E63423E0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4724928EE4BDF194B2490A25</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A006821CD9E93D60BACC2331</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D7A8A2239B7B9860F7EABCEE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AE9A4FB9EA8770986D643CDD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WalletApp.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B0761D6409B900737B31</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>HistoryVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B0771D6409B900737B31</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>HomeVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B0781D6409B900737B31</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>HomeVC.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B0791D6409B900737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B0761D6409B900737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB78B07A1D6409B900737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B0771D6409B900737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB78B07B1D6409B900737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B0781D6409B900737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB78B0831D6416E100737B31</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>HistoryCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B0841D6416E100737B31</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>HistoryCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B0851D6416E100737B31</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>HistoryVC.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B0861D6416E100737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B0831D6416E100737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB78B0871D6416E100737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B0841D6416E100737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB78B0881D6416E100737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B0851D6416E100737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB78B0891D6416F300737B31</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BB78B0761D6409B900737B31</string>
-				<string>BB78B0851D6416E100737B31</string>
-				<string>BB78B0831D6416E100737B31</string>
-				<string>BB78B0841D6416E100737B31</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>HistoryVC</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B08A1D6416FE00737B31</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BB78B0771D6409B900737B31</string>
-				<string>BB78B0781D6409B900737B31</string>
-				<string>BB78B08B1D641B0400737B31</string>
-				<string>BB78B08C1D641B0400737B31</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>HomeVC</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B08B1D641B0400737B31</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>add_default.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B08C1D641B0400737B31</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>add_selected.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB78B08D1D641B0400737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B08B1D641B0400737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB78B08E1D641B0400737B31</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB78B08C1D641B0400737B31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D7A8A2239B7B9860F7EABCEE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-WalletApp.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E1121C961D64047400EA4A7D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1121CA11D64047400EA4A7D</string>
-				<string>E1121CA01D64047400EA4A7D</string>
-				<string>30EC4AE1DCB65539ECC28FC9</string>
-				<string>27D3B9422074C6EE95983428</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121C971D64047400EA4A7D</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>PHS</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E1121C9E1D64047400EA4A7D</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E1121C9A1D64047400EA4A7D</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E1121C961D64047400EA4A7D</string>
-			<key>productRefGroup</key>
-			<string>E1121CA01D64047400EA4A7D</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E1121C9E1D64047400EA4A7D</string>
-			</array>
-		</dict>
-		<key>E1121C9A1D64047400EA4A7D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E1121CB21D64047400EA4A7D</string>
-				<string>E1121CB31D64047400EA4A7D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E1121C9B1D64047400EA4A7D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BB78B0791D6409B900737B31</string>
-				<string>BB78B07A1D6409B900737B31</string>
-				<string>E1121CA51D64047400EA4A7D</string>
-				<string>BB78B0861D6416E100737B31</string>
-				<string>E1121CBC1D64073A00EA4A7D</string>
-				<string>E1121CDA1D641E0C00EA4A7D</string>
-				<string>E1121CB81D64052700EA4A7D</string>
-				<string>E1121CAB1D64047400EA4A7D</string>
-				<string>E1121CBB1D64073A00EA4A7D</string>
-				<string>E1121CA31D64047400EA4A7D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1121C9C1D64047400EA4A7D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A006821CD9E93D60BACC2331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1121C9D1D64047400EA4A7D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BB78B08E1D641B0400737B31</string>
-				<string>E1121CC31D640C3200EA4A7D</string>
-				<string>E1121CB01D64047400EA4A7D</string>
-				<string>E1121CAD1D64047400EA4A7D</string>
-				<string>BB78B0881D6416E100737B31</string>
-				<string>BB78B07B1D6409B900737B31</string>
-				<string>BB78B0871D6416E100737B31</string>
-				<string>E1121CA81D64047400EA4A7D</string>
-				<string>BB78B08D1D641B0400737B31</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E1121C9E1D64047400EA4A7D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E1121CB41D64047400EA4A7D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0A8A4F39E005F76D45582CE0</string>
-				<string>E1121C9B1D64047400EA4A7D</string>
-				<string>E1121C9C1D64047400EA4A7D</string>
-				<string>E1121C9D1D64047400EA4A7D</string>
-				<string>2DB7289CBA5EA5CEF7FD7480</string>
-				<string>4724928EE4BDF194B2490A25</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WalletApp</string>
-			<key>productName</key>
-			<string>WalletApp</string>
-			<key>productReference</key>
-			<string>E1121C9F1D64047400EA4A7D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E1121C9F1D64047400EA4A7D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WalletApp.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E1121CA01D64047400EA4A7D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1121C9F1D64047400EA4A7D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CA11D64047400EA4A7D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1121CBD1D64077800EA4A7D</string>
-				<string>E1121CB71D64052700EA4A7D</string>
-				<string>E1121CA21D64047400EA4A7D</string>
-				<string>E1121CA41D64047400EA4A7D</string>
-				<string>E1121CD91D641E0C00EA4A7D</string>
-				<string>E1121CA61D64047400EA4A7D</string>
-				<string>E1121CDC1D641E4D00EA4A7D</string>
-				<string>BB78B0891D6416F300737B31</string>
-				<string>BB78B08A1D6416FE00737B31</string>
-				<string>E1121CAC1D64047400EA4A7D</string>
-				<string>E1121CAE1D64047400EA4A7D</string>
-				<string>E1121CB11D64047400EA4A7D</string>
-				<string>E1121CA91D64047400EA4A7D</string>
-				<string>E1121CC21D640C3200EA4A7D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WalletApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CA21D64047400EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CA31D64047400EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CA21D64047400EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CA41D64047400EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CA51D64047400EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CA41D64047400EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CA61D64047400EA4A7D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1121CA71D64047400EA4A7D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CA71D64047400EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CA81D64047400EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CA61D64047400EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CA91D64047400EA4A7D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1121CAA1D64047400EA4A7D</string>
-			</array>
-			<key>currentVersion</key>
-			<string>E1121CAA1D64047400EA4A7D</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>WalletApp.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>E1121CAA1D64047400EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>WalletApp.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CAB1D64047400EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CA91D64047400EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CAC1D64047400EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CAD1D64047400EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CAC1D64047400EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CAE1D64047400EA4A7D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1121CAF1D64047400EA4A7D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CAF1D64047400EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CB01D64047400EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CAE1D64047400EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CB11D64047400EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CB21D64047400EA4A7D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E1121CB31D64047400EA4A7D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E1121CB41D64047400EA4A7D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E1121CB51D64047400EA4A7D</string>
-				<string>E1121CB61D64047400EA4A7D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E1121CB51D64047400EA4A7D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AE9A4FB9EA8770986D643CDD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WalletApp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>phs.WalletApp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>WalletApp-Bridging-Header.h</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E1121CB61D64047400EA4A7D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E28B8A92473B9431E63423E0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WalletApp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>phs.WalletApp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>WalletApp-Bridging-Header.h</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E1121CB71D64052700EA4A7D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Config.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CB81D64052700EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CB71D64052700EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CB91D64073A00EA4A7D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SWXMLHash.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CBA1D64073A00EA4A7D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SWXMLHash+TypeConversion.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CBB1D64073A00EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CB91D64073A00EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CBC1D64073A00EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CBA1D64073A00EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CBD1D64077800EA4A7D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1121CB91D64073A00EA4A7D</string>
-				<string>E1121CBA1D64073A00EA4A7D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Libs</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CC21D640C3200EA4A7D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E1121CC31D640C3200EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CC21D640C3200EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CD91D641E0C00EA4A7D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ActionOBJ.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1121CDA1D641E0C00EA4A7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E1121CD91D641E0C00EA4A7D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1121CDC1D641E4D00EA4A7D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>WalletApp-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E28B8A92473B9431E63423E0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WalletApp.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E1121C971D64047400EA4A7D</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A006821CD9E93D60BACC2331 /* libPods-WalletApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A8A2239B7B9860F7EABCEE /* libPods-WalletApp.a */; };
+		BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0761D6409B900737B31 /* HistoryVC.swift */; };
+		BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0771D6409B900737B31 /* HomeVC.swift */; };
+		BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0781D6409B900737B31 /* HomeVC.xib */; };
+		BB78B0861D6416E100737B31 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0831D6416E100737B31 /* HistoryCell.swift */; };
+		BB78B0871D6416E100737B31 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0841D6416E100737B31 /* HistoryCell.xib */; };
+		BB78B0881D6416E100737B31 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0851D6416E100737B31 /* HistoryVC.xib */; };
+		BB78B08D1D641B0400737B31 /* add_default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB78B08B1D641B0400737B31 /* add_default.png */; };
+		BB78B08E1D641B0400737B31 /* add_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BB78B08C1D641B0400737B31 /* add_selected.png */; };
+		E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA21D64047400EA4A7D /* AppDelegate.swift */; };
+		E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA41D64047400EA4A7D /* ViewController.swift */; };
+		E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CA61D64047400EA4A7D /* Main.storyboard */; };
+		E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA91D64047400EA4A7D /* WalletApp.xcdatamodeld */; };
+		E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1121CAC1D64047400EA4A7D /* Assets.xcassets */; };
+		E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CAE1D64047400EA4A7D /* LaunchScreen.storyboard */; };
+		E1121CB81D64052700EA4A7D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CB71D64052700EA4A7D /* Config.swift */; };
+		E1121CBB1D64073A00EA4A7D /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */; };
+		E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */; };
+		E1121CC31D640C3200EA4A7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1121CC21D640C3200EA4A7D /* Podfile */; };
+		E1121CDA1D641E0C00EA4A7D /* ActionOBJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE9A4FB9EA8770986D643CDD /* Pods-WalletApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BB78B0761D6409B900737B31 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		BB78B0771D6409B900737B31 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BB78B0781D6409B900737B31 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BB78B0831D6416E100737B31 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		BB78B0841D6416E100737B31 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		BB78B0851D6416E100737B31 /* HistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
+		BB78B08B1D641B0400737B31 /* add_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_default.png; sourceTree = "<group>"; };
+		BB78B08C1D641B0400737B31 /* add_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_selected.png; sourceTree = "<group>"; };
+		D7A8A2239B7B9860F7EABCEE /* libPods-WalletApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WalletApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1121C9F1D64047400EA4A7D /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1121CA21D64047400EA4A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1121CA41D64047400EA4A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1121CA71D64047400EA4A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1121CAA1D64047400EA4A7D /* WalletApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WalletApp.xcdatamodel; sourceTree = "<group>"; };
+		E1121CAC1D64047400EA4A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1121CAF1D64047400EA4A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1121CB11D64047400EA4A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1121CB71D64052700EA4A7D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
+		E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		E1121CC21D640C3200EA4A7D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionOBJ.swift; sourceTree = "<group>"; };
+		E1121CDC1D641E4D00EA4A7D /* WalletApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WalletApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		E28B8A92473B9431E63423E0 /* Pods-WalletApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1121C9C1D64047400EA4A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A006821CD9E93D60BACC2331 /* libPods-WalletApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27D3B9422074C6EE95983428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8A2239B7B9860F7EABCEE /* libPods-WalletApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30EC4AE1DCB65539ECC28FC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE9A4FB9EA8770986D643CDD /* Pods-WalletApp.debug.xcconfig */,
+				E28B8A92473B9431E63423E0 /* Pods-WalletApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB78B0891D6416F300737B31 /* HistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				BB78B0761D6409B900737B31 /* HistoryVC.swift */,
+				BB78B0851D6416E100737B31 /* HistoryVC.xib */,
+				BB78B0831D6416E100737B31 /* HistoryCell.swift */,
+				BB78B0841D6416E100737B31 /* HistoryCell.xib */,
+			);
+			name = HistoryVC;
+			sourceTree = "<group>";
+		};
+		BB78B08A1D6416FE00737B31 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				BB78B0771D6409B900737B31 /* HomeVC.swift */,
+				BB78B0781D6409B900737B31 /* HomeVC.xib */,
+				BB78B08B1D641B0400737B31 /* add_default.png */,
+				BB78B08C1D641B0400737B31 /* add_selected.png */,
+			);
+			name = HomeVC;
+			sourceTree = "<group>";
+		};
+		E1121C961D64047400EA4A7D = {
+			isa = PBXGroup;
+			children = (
+				E1121CA11D64047400EA4A7D /* WalletApp */,
+				E1121CA01D64047400EA4A7D /* Products */,
+				30EC4AE1DCB65539ECC28FC9 /* Pods */,
+				27D3B9422074C6EE95983428 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1121CA01D64047400EA4A7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1121C9F1D64047400EA4A7D /* WalletApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1121CA11D64047400EA4A7D /* WalletApp */ = {
+			isa = PBXGroup;
+			children = (
+				E1121CBD1D64077800EA4A7D /* Libs */,
+				E1121CB71D64052700EA4A7D /* Config.swift */,
+				E1121CA21D64047400EA4A7D /* AppDelegate.swift */,
+				E1121CA41D64047400EA4A7D /* ViewController.swift */,
+				E1121CD91D641E0C00EA4A7D /* ActionOBJ.swift */,
+				E1121CA61D64047400EA4A7D /* Main.storyboard */,
+				E1121CDC1D641E4D00EA4A7D /* WalletApp-Bridging-Header.h */,
+				BB78B0891D6416F300737B31 /* HistoryVC */,
+				BB78B08A1D6416FE00737B31 /* HomeVC */,
+				E1121CAC1D64047400EA4A7D /* Assets.xcassets */,
+				E1121CAE1D64047400EA4A7D /* LaunchScreen.storyboard */,
+				E1121CB11D64047400EA4A7D /* Info.plist */,
+				E1121CA91D64047400EA4A7D /* WalletApp.xcdatamodeld */,
+				E1121CC21D640C3200EA4A7D /* Podfile */,
+			);
+			path = WalletApp;
+			sourceTree = "<group>";
+		};
+		E1121CBD1D64077800EA4A7D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */,
+				E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1121C9E1D64047400EA4A7D /* WalletApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1121CB41D64047400EA4A7D /* Build configuration list for PBXNativeTarget "WalletApp" */;
+			buildPhases = (
+				0A8A4F39E005F76D45582CE0 /* Check Pods Manifest.lock */,
+				E1121C9B1D64047400EA4A7D /* Sources */,
+				E1121C9C1D64047400EA4A7D /* Frameworks */,
+				E1121C9D1D64047400EA4A7D /* Resources */,
+				2DB7289CBA5EA5CEF7FD7480 /* Embed Pods Frameworks */,
+				4724928EE4BDF194B2490A25 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalletApp;
+			productName = WalletApp;
+			productReference = E1121C9F1D64047400EA4A7D /* WalletApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1121C971D64047400EA4A7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = PHS;
+				TargetAttributes = {
+					E1121C9E1D64047400EA4A7D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E1121C9A1D64047400EA4A7D /* Build configuration list for PBXProject "WalletApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1121C961D64047400EA4A7D;
+			productRefGroup = E1121CA01D64047400EA4A7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1121C9E1D64047400EA4A7D /* WalletApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1121C9D1D64047400EA4A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB78B08E1D641B0400737B31 /* add_selected.png in Resources */,
+				E1121CC31D640C3200EA4A7D /* Podfile in Resources */,
+				E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */,
+				E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */,
+				BB78B0881D6416E100737B31 /* HistoryVC.xib in Resources */,
+				BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */,
+				BB78B0871D6416E100737B31 /* HistoryCell.xib in Resources */,
+				E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */,
+				BB78B08D1D641B0400737B31 /* add_default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A8A4F39E005F76D45582CE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB7289CBA5EA5CEF7FD7480 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4724928EE4BDF194B2490A25 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletApp/Pods-WalletApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1121C9B1D64047400EA4A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */,
+				BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */,
+				E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */,
+				BB78B0861D6416E100737B31 /* HistoryCell.swift in Sources */,
+				E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */,
+				E1121CDA1D641E0C00EA4A7D /* ActionOBJ.swift in Sources */,
+				E1121CB81D64052700EA4A7D /* Config.swift in Sources */,
+				E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */,
+				E1121CBB1D64073A00EA4A7D /* SWXMLHash.swift in Sources */,
+				E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1121CA61D64047400EA4A7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1121CA71D64047400EA4A7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1121CAE1D64047400EA4A7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1121CAF1D64047400EA4A7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1121CB21D64047400EA4A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1121CB31D64047400EA4A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1121CB51D64047400EA4A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE9A4FB9EA8770986D643CDD /* Pods-WalletApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WalletApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = phs.WalletApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WalletApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1121CB61D64047400EA4A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28B8A92473B9431E63423E0 /* Pods-WalletApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WalletApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = phs.WalletApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WalletApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1121C9A1D64047400EA4A7D /* Build configuration list for PBXProject "WalletApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1121CB21D64047400EA4A7D /* Debug */,
+				E1121CB31D64047400EA4A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1121CB41D64047400EA4A7D /* Build configuration list for PBXNativeTarget "WalletApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1121CB51D64047400EA4A7D /* Debug */,
+				E1121CB61D64047400EA4A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1121CA91D64047400EA4A7D /* WalletApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1121CAA1D64047400EA4A7D /* WalletApp.xcdatamodel */,
+			);
+			currentVersion = E1121CAA1D64047400EA4A7D /* WalletApp.xcdatamodel */;
+			path = WalletApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E1121C971D64047400EA4A7D /* Project object */;
+}

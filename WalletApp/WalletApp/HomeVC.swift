@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class HomeVC: UIViewController {
+class HomeVC: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
    /*
      //MARK:- OUTLET
     //MARK:- VAR
@@ -21,11 +21,14 @@ class HomeVC: UIViewController {
     @IBOutlet var       btnPositive:UIButton!;
     @IBOutlet var       btnNegative:UIButton!;
     @IBOutlet var       tfTotal: UILabel!;
-    @IBOutlet var       svInput:UIStackView!;
+    @IBOutlet var       svInput:UIView!;
     @IBOutlet var       btnDone:UIButton!;
+    @IBOutlet weak var myPicker: UIPickerView!
+    @IBOutlet var       lbCurrency:UILabel!;
 
     //MARK:- VAR
     var objs: [ActionOBJ]!
+    let pickerData = ["USD","VND","AUD","BGN","BRL","CAD","CHF","CNY","CZK", "DKK"]
 
     //MARK:- INIT
     override func viewDidLoad() {
@@ -36,6 +39,7 @@ class HomeVC: UIViewController {
         view.addGestureRecognizer(tap)
         getListData()
         hideStackView()
+        lbCurrency.text = pickerData[0]
     }
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
@@ -107,10 +111,30 @@ class HomeVC: UIViewController {
         }
 
     }
+    @IBAction func currencyAction(sender: UIButton)
+    {
+        myPicker.hidden = !myPicker.hidden;
+    }
     //Calls this function when the tap is recognized.
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
+    //MARK: - Delegates and data sources
+    //MARK: Data Sources
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    //MARK: Delegates
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        myPicker.hidden = true;
+        lbCurrency.text = pickerData[row]
+    }
 }
