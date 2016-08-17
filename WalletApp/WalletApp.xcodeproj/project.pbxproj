@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB78B0711D64055F00737B31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0701D64055F00737B31 /* HomeVC.swift */; };
-		BB78B0731D64056C00737B31 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0721D64056C00737B31 /* HistoryVC.swift */; };
-		BB78B0751D64058100737B31 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0741D64058100737B31 /* HomeVC.xib */; };
+		BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0761D6409B900737B31 /* HistoryVC.swift */; };
+		BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78B0771D6409B900737B31 /* HomeVC.swift */; };
+		BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB78B0781D6409B900737B31 /* HomeVC.xib */; };
 		E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA21D64047400EA4A7D /* AppDelegate.swift */; };
 		E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA41D64047400EA4A7D /* ViewController.swift */; };
 		E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CA61D64047400EA4A7D /* Main.storyboard */; };
 		E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1121CA91D64047400EA4A7D /* WalletApp.xcdatamodeld */; };
 		E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1121CAC1D64047400EA4A7D /* Assets.xcassets */; };
 		E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1121CAE1D64047400EA4A7D /* LaunchScreen.storyboard */; };
+		E1121CB81D64052700EA4A7D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CB71D64052700EA4A7D /* Config.swift */; };
+		E1121CBB1D64073A00EA4A7D /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */; };
+		E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */; };
+		E1121CBF1D6408C600EA4A7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1121CBE1D6408C600EA4A7D /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB78B0701D64055F00737B31 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		BB78B0721D64056C00737B31 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
-		BB78B0741D64058100737B31 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BB78B0761D6409B900737B31 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		BB78B0771D6409B900737B31 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BB78B0781D6409B900737B31 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		E1121C9F1D64047400EA4A7D /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1121CA21D64047400EA4A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1121CA41D64047400EA4A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +34,10 @@
 		E1121CAC1D64047400EA4A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1121CAF1D64047400EA4A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1121CB11D64047400EA4A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1121CB71D64052700EA4A7D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
+		E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		E1121CBE1D6408C600EA4A7D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +70,30 @@
 		E1121CA11D64047400EA4A7D /* WalletApp */ = {
 			isa = PBXGroup;
 			children = (
+				E1121CBD1D64077800EA4A7D /* Libs */,
+				E1121CB71D64052700EA4A7D /* Config.swift */,
 				E1121CA21D64047400EA4A7D /* AppDelegate.swift */,
-				BB78B0701D64055F00737B31 /* HomeVC.swift */,
-				BB78B0741D64058100737B31 /* HomeVC.xib */,
-				BB78B0721D64056C00737B31 /* HistoryVC.swift */,
 				E1121CA41D64047400EA4A7D /* ViewController.swift */,
+				BB78B0761D6409B900737B31 /* HistoryVC.swift */,
+				BB78B0771D6409B900737B31 /* HomeVC.swift */,
+				BB78B0781D6409B900737B31 /* HomeVC.xib */,
 				E1121CA61D64047400EA4A7D /* Main.storyboard */,
 				E1121CAC1D64047400EA4A7D /* Assets.xcassets */,
 				E1121CAE1D64047400EA4A7D /* LaunchScreen.storyboard */,
+				E1121CBE1D6408C600EA4A7D /* Podfile */,
 				E1121CB11D64047400EA4A7D /* Info.plist */,
 				E1121CA91D64047400EA4A7D /* WalletApp.xcdatamodeld */,
 			);
 			path = WalletApp;
+			sourceTree = "<group>";
+		};
+		E1121CBD1D64077800EA4A7D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				E1121CB91D64073A00EA4A7D /* SWXMLHash.swift */,
+				E1121CBA1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift */,
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1121CB01D64047400EA4A7D /* LaunchScreen.storyboard in Resources */,
-				BB78B0751D64058100737B31 /* HomeVC.xib in Resources */,
 				E1121CAD1D64047400EA4A7D /* Assets.xcassets in Resources */,
+				BB78B07B1D6409B900737B31 /* HomeVC.xib in Resources */,
+				E1121CBF1D6408C600EA4A7D /* Podfile in Resources */,
 				E1121CA81D64047400EA4A7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,10 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB78B0791D6409B900737B31 /* HistoryVC.swift in Sources */,
+				BB78B07A1D6409B900737B31 /* HomeVC.swift in Sources */,
 				E1121CA51D64047400EA4A7D /* ViewController.swift in Sources */,
-				BB78B0731D64056C00737B31 /* HistoryVC.swift in Sources */,
-				BB78B0711D64055F00737B31 /* HomeVC.swift in Sources */,
+				E1121CBC1D64073A00EA4A7D /* SWXMLHash+TypeConversion.swift in Sources */,
+				E1121CB81D64052700EA4A7D /* Config.swift in Sources */,
 				E1121CAB1D64047400EA4A7D /* WalletApp.xcdatamodeld in Sources */,
+				E1121CBB1D64073A00EA4A7D /* SWXMLHash.swift in Sources */,
 				E1121CA31D64047400EA4A7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
